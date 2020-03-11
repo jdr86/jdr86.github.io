@@ -16,8 +16,12 @@
     <noscript>
         <link rel="stylesheet" href="./style.css"></noscript>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="prefetch" href="./img/animation.png">
+    <link rel="preload" href="./script.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -27,150 +31,106 @@
 
 <body>
     <main class="container-fluid main__page">
-
         <section class="merchant-header p-100-0">
             <div class="container">
                 <div class="row">
                     <div class="absLeftImg"></div>
                     <div class="absRightImg"></div>
                     <div class="col-md-6 leftData">
-                        <div>
-                            <img loading="lazy" alt="animation" srcset="./img/animation.png 1x, ./img/animation@2x.png 2x" src="./img/animation.png">
+                        <div> <img loading="lazy" alt="animation"
+                                srcset="./img/animation.png 1x, ./img/animation@2x.png 2x" src="./img/animation.png">
                         </div>
                         <div>
                             <h1>Claim your business and register yourself</h1>
-                            <p>Partner with TIN to deliver tangible value to all stakeholders of your community.
-                                TIN delivers a complete suite of services inclusive of web, mobile, infrastructure and
+                            <p>Partner with TIN to deliver tangible value to all stakeholders of your community. TIN
+                                delivers a complete suite of services inclusive of web, mobile, infrastructure and
                                 consulting with the goal of creating a sustainable revenue stream for your community.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-6 rightForm">
-                        <!-- Default form login -->
                         <form class="text-center border border-light" action="#!">
                             <div class="formHead">
                                 <h3>Claim your business</h3>
                             </div>
-                            <div id="form1" class="formInner1">
-                                <!-- Username -->
-                                <label>
-                                <input type="text" id="Username" class="form-control " placeholder="User Name"></label>
-                                <!-- Firstname -->
-                                <label>
-                                <input type="text" id="FirstName" class="form-control " placeholder="First Name"></label>
-                                <!-- Lastname -->
-                                <label>
-                                <input type="text" id="Lastname" class="form-control " placeholder="Last Name"></label>
-
-                                <!-- Email -->
-                                <label>
-                                <input type="email" id="Email" class="form-control " placeholder="Email"></label>
-
-                                <!-- Password -->
-                                <label>
-                                <input type="password" id="Password" class="form-control " placeholder="Password"></label>
-
+                            <div id="form1" class="formInner1"> <label> <input type="text" id="Username"
+                                        class="form-control " placeholder="User Name"></label> <label> <input
+                                        type="text" id="FirstName" class="form-control "
+                                        placeholder="First Name"></label> <label>
+                                    <input type="text" id="Lastname" class="form-control "
+                                        placeholder="Last Name"></label>
+                                <label> <input type="email" id="Email" class="form-control "
+                                        placeholder="Email"></label>
+                                <label> <input type="password" id="Password" class="form-control "
+                                        placeholder="Password"></label>
                                 <div class="d-flex justify-content-start">
                                     <div>
-                                        <!-- Accept terms -->
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="Accept">
-                                            <label class="custom-control-label accept" for="Accept">Accept Terms &
-                                                Conditions</label>
-                                        </div>
+                                        <div class="custom-control custom-checkbox"> <input type="checkbox"
+                                                class="custom-control-input" id="Accept"> <label
+                                                class="custom-control-label accept" for="Accept">Accept Terms &
+                                                Conditions</label> </div>
                                     </div>
-
-                                </div>
-
-                                <!-- Sign in button -->
-                                <button onclick=callForm(2) class="btn-blue my-4" type="button">Next</button>
-
-                                <!-- Register -->
-                                <p dir="ltr" class="account">Already have an account?
-                                </p>
+                                </div><button onclick=callForm(2) class="btn-blue my-4" type="button">Next</button>
+                                <p dir="ltr" class="account">Already have an account? </p>
                             </div>
                             <div id="form2" class="hidden formInner">
                                 <h4>Verify it’s you</h4>
-                                <div class="d-flex align-items-center">
-                                    <img loading="lazy" src="./img/icon.png" alt="" class="icon">
+                                <div class="d-flex align-items-center"> <img loading="lazy" src="./img/icon.png" alt=""
+                                        class="icon">
                                     <h5>john.doe@gmail.com</h5>
                                 </div>
                                 <h4>Enter phone number</h4>
                                 <h5>Enter a phone number to get a text message with a varification code</h5>
-                                <div class="d-flex align-items-center">
-                                    <select name="countries" id="countries w-55">
+                                <div class="d-flex align-items-center"> <select name="countries" id="countries w-55">
                                         <option>AN</option>
                                         <option>UAE</option>
                                         <option>AFG</option>
                                         <option>AR</option>
                                         <option>NA</option>
-                                    </select>
-                                    <input type="text" placeholder="+1">
-                                </div>
-
-                                <button onclick=callForm(1) class="btn-grey my-4" type="button">Cancel</button>
-                                <button onclick=callForm(3) class="btn-blue my-4" type="button">OK</button>
+                                    </select> <input type="text" placeholder="+1"> </div><button onclick=callForm(1)
+                                    class="btn-grey my-4" type="button">Cancel</button> <button onclick=callForm(3)
+                                    class="btn-blue my-4" type="button">OK</button>
                                 <div id="verify" class="below-div hidden">
                                     <h4>Enter verification code</h4>
-                                    <h5>A text message with a verification code has been sent to
-                                        +134*****</h5>
-                                        <label>
-                                    <input type="text" placeholder="Enter 6-digit code"></label>
-                                </div>
-                                <button onclick=callForm(4) class="btn-blue my-4" type="button">VERIFY</button>
+                                    <h5>A text message with a verification code has been sent to +134*****</h5> <label>
+                                        <input type="text" placeholder="Enter 6-digit code"></label>
+                                </div><button onclick=callForm(4) class="btn-blue my-4" type="button">VERIFY</button>
                             </div>
-                            <div id="form4" class="hidden formInner1">
-                                <label>
-                                <input type="text" id="street" class="form-control " placeholder="Street"></label>
-                                <div class="dropArrow">
-                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
-                                    <select class="form-control">
+                            <div id="form4" class="hidden formInner1"> <label> <input type="text" id="street"
+                                        class="form-control " placeholder="Street"></label>
+                                <div class="dropArrow"> <img loading="lazy" src="./img/chevron-down.png" alt=""> <select
+                                        class="form-control">
                                         <option value="">Country</option>
                                         <option value="">Option 2</option>
                                         <option value="">Option 3</option>
                                         <option value="">Option 4</option>
-                                    </select>
-                                </div>
-                                <div class="dropArrow">
-                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
-                                    <select class="form-control">
+                                    </select> </div>
+                                <div class="dropArrow"> <img loading="lazy" src="./img/chevron-down.png" alt=""> <select
+                                        class="form-control">
                                         <option value="">State</option>
                                         <option value="">Option 2</option>
                                         <option value="">Option 3</option>
                                         <option value="">Option 4</option>
-                                    </select>
-                                </div>
-                                <div class="dropArrow">
-                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
-                                    <select class="form-control">
+                                    </select> </div>
+                                <div class="dropArrow"> <img loading="lazy" src="./img/chevron-down.png" alt=""> <select
+                                        class="form-control">
                                         <option value="">City</option>
                                         <option value="">Option 2</option>
                                         <option value="">Option 3</option>
                                         <option value="">Option 4</option>
-                                    </select>
-                                </div>
-                                <div class="dropArrow">
-                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
-                                    <select class="form-control">
+                                    </select> </div>
+                                <div class="dropArrow"> <img loading="lazy" src="./img/chevron-down.png" alt=""> <select
+                                        class="form-control">
                                         <option value="">Neighborhood</option>
                                         <option value="">Option 2</option>
                                         <option value="">Option 3</option>
                                         <option value="">Option 4</option>
-                                    </select>
-                                </div>
-                                <label class="radio-container">Plan 1
-                                    <input type="radio" checked="checked" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">Plan 2
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">Plan 3
-                                    <input type="radio" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <button class="btn-blue my-4" type="button">CLAIM ENTITY</button>
+                                    </select> </div><label class="radio-container">Plan 1 <input type="radio"
+                                        checked="checked" name="radio"> <span class="checkmark"></span> </label> <label
+                                    class="radio-container">Plan 2 <input type="radio" name="radio"> <span
+                                        class="checkmark"></span> </label> <label class="radio-container">Plan 3 <input
+                                        type="radio" name="radio"> <span class="checkmark"></span> </label> <button
+                                    class="btn-blue my-4" type="button">CLAIM ENTITY</button>
                             </div>
                             <div class="loader d-flex justify-content-center align-items-center">
                                 <div id="circle1" class="circle circle-active"></div>
@@ -179,42 +139,34 @@
                                 <div id="circle4" class="circle"></div>
                             </div>
                         </form>
-                        <!-- Default form login -->
-
                     </div>
                 </div>
             </div>
         </section>
-
         <section class="discover-section p-100-0">
             <div class="container">
                 <div class="row topRow">
                     <div class="col-md-12">
-                        <h1 class="text-center">
-                            Discover how tin can help elevate your business
-                        </h1>
+                        <h1 class="text-center"> Discover how tin can help elevate your business </h1>
                         <p class="text-center"> Attract more customers to your business</p>
                     </div>
                 </div>
                 <div class="row design">
                     <div class="col-md-3">
-                        <div onclick=showTabContent(1) id="box1" class="box box-active">
-                            <span class="dot">&#9632;</span>
+                        <div onclick=showTabContent(1) id="box1" class="box box-active"> <span
+                                class="dot">&#9632;</span>
                             <h4>01</h4>
                             <h3>Business Listings</h3>
                         </div>
-                        <div onclick=showTabContent(2) id="box2" class="box">
-                            <span class="dot">&#9632;</span>
+                        <div onclick=showTabContent(2) id="box2" class="box"> <span class="dot">&#9632;</span>
                             <h4>02</h4>
                             <h3>News & Blogs</h3>
                         </div>
-                        <div onclick=showTabContent(3) id="box3" class="box">
-                            <span class="dot">&#9632;</span>
+                        <div onclick=showTabContent(3) id="box3" class="box"> <span class="dot">&#9632;</span>
                             <h4>03</h4>
                             <h3>Event Listings</h3>
                         </div>
-                        <div onclick=showTabContent(4) id="box4" class="box">
-                            <span class="dot">&#9632;</span>
+                        <div onclick=showTabContent(4) id="box4" class="box"> <span class="dot">&#9632;</span>
                             <h4>04</h4>
                             <h3>Rating and Reviews</h3>
                         </div>
@@ -224,46 +176,43 @@
                         <div id="tabContent1" class="rightBox">
                             <h1>Your design or ours?</h1>
                             <p dir="ltr">Enhance the functionality of your community portal. Designed to be the most
-                                comprehensive
-                                information resource on what to see and do in your community.
-                                Businesses can easily update their listings and micro-site with new information,
-                                providing timely and accurate distribution of products, services and events.</p>
-                            <button class="btn-blue">choose plan</button>
+                                comprehensive information resource on what to see and do in your community. Businesses
+                                can
+                                easily update their listings and micro-site with new information, providing timely and
+                                accurate distribution of products, services and events.</p><button
+                                class="btn-blue">choose
+                                plan</button>
                         </div>
                         <div id="tabContent2" class="rightBox hidden">
                             <h1>News & Blogs</h1>
                             <p dir="ltr">Our society gives men the absolute right and liberty of being vulgar and
-                                inappropriate,
-                                both privately and publicly.</p>
-                            <button class="btn-blue">choose plan</button>
+                                inappropriate, both privately and publicly.</p><button class="btn-blue">choose
+                                plan</button>
                         </div>
                         <div id="tabContent3" class="rightBox hidden">
                             <h1>Event Listings</h1>
-                            <p dir="ltr">New event listings must be submitted a minimum of 14 days in advance.
-                                WHY? Submitting your listing as far in advance as possible gives your event greater
-                                exposure over a longer period of time on our website and through search engines.</p>
-                            <button class="btn-blue">choose plan</button>
+                            <p dir="ltr">New event listings must be submitted a minimum of 14 days in advance. WHY?
+                                Submitting your listing as far in advance as possible gives your event greater exposure
+                                over
+                                a longer period of time on our website and through search engines.</p><button
+                                class="btn-blue">choose plan</button>
                         </div>
                         <div id="tabContent4" class="rightBox hidden">
                             <h1>Rating and Reviews</h1>
                             <p dir="ltr">Ratings: your customers are giving feedback through numbers. ... Reviews: your
-                                customers
-                                are giving feedback through writing their own opinion in the form of a text. Reviews are
-                                displayed as they are written.</p>
-                            <button class="btn-blue">choose plan</button>
+                                customers are giving feedback through writing their own opinion in the form of a text.
+                                Reviews are displayed as they are written.</p><button class="btn-blue">choose
+                                plan</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
         <section class="company-section p-100-0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 topRow">
-                        <h1 class="text-center">
-                            You’re in good company
-                        </h1>
+                        <h1 class="text-center"> You’re in good company </h1>
                         <p class="text-center"> Trusted by the world’s most innovative businesses – big and small</p>
                     </div>
                 </div>
@@ -274,48 +223,38 @@
                             <p dir="ltr">We are a team of people from government, tourism and the private sector with
                                 broad
                                 industry experience who are passionate about making communities a better place to live,
-                                work and play. We believe that advances in technology can play a critical role in the
-                                Smart Community of the Future.</p>
+                                work
+                                and play. We believe that advances in technology can play a critical role in the Smart
+                                Community of the Future.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 rightImage">
-                        <img loading="lazy" alt="play" src="./img/play.png">
-                    </div>
+                    <div class="col-md-6 rightImage"> <img loading="lazy" alt="play" src="./img/play.png"> </div>
                 </div>
             </div>
         </section>
-
         <section class="customer-section p-100-0">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 topRow">
-                        <h1 class="text-center">
-                            What Clients Say
-                        </h1>
+                        <h1 class="text-center"> What Clients Say </h1>
                         <p class="text-center"> Reviews From Our Happy Clients</p>
                     </div>
                 </div>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
-
-                    <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <div class="row design">
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -326,14 +265,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -344,14 +280,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -363,18 +296,14 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="item">
                             <div class="row design">
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -385,14 +314,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -403,14 +329,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -422,18 +345,14 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="item">
                             <div class="row design">
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -444,14 +363,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -462,14 +378,11 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <div class="testimonial">
-                                        <i class="fa fa-quote-left"></i>
+                                    <div class="testimonial"> <i class="fa fa-quote-left"></i>
                                         <p dir="ltr">“Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.
-                                            Lorem Ipsum
-                                            has
-                                            been the industry's standard dummy text ever since
-                                            the 1500s, when an.”</p>
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the
+                                            1500s, when an.”</p>
                                         <div class="d-flex user align-items-center">
                                             <div class="logo"></div>
                                             <div>
@@ -481,29 +394,22 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <img loading="lazy" src="./img//leftArrow.png" alt="">
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <img loading="lazy" src="./img//rightArrow.png" alt="">
-                    </a>
+                    </div><a class="left carousel-control" href="#myCarousel" data-slide="prev"> <img loading="lazy"
+                            src="./img//leftArrow.png" alt=""> </a> <a class="right carousel-control" href="#myCarousel"
+                        data-slide="next"> <img loading="lazy" src="./img//rightArrow.png" alt=""> </a>
                 </div>
             </div>
         </section>
-
         <section class="community-section p-100-0">
             <div class="container">
                 <div class="row platform">
                     <div class="col-md-6 leftData d-flex flex-column justify-content-center">
                         <h1>Smart Community Platform</h1>
                         <p dir="ltr">​Cities around the world have a civic responsibility to investigate how smart
-                            cities can
-                            improve the lives of their constituents. Smart city practitioners demonstrate how innovation
-                            enhances the quality of urban life.
-                        </p>
+                            cities
+                            can improve the lives of their constituents. Smart city practitioners demonstrate how
+                            innovation
+                            enhances the quality of urban life. </p>
                     </div>
                     <div class="col-md-6 rightImage"></div>
                 </div>

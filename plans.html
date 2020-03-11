@@ -16,8 +16,14 @@
     <noscript>
         <link rel="stylesheet" href="./style.css"></noscript>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preload" href="./script.js">
+    <link rel="prefetch" href="./img/small.png">
+    <link rel="prefetch" href="./img/trial.png">
+    <link rel="prefetch" href="./img/enterprise.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
@@ -26,8 +32,7 @@
 </head>
 
 <body>
-    <div class="container-fluid main__page">
-
+    <main class="container-fluid main__page">
         <section class="pricing_plan p-100-0">
             <div class="container">
                 <div class="row">
@@ -38,93 +43,87 @@
                         <p class="text-center">Pricing Guide</p>
                         <div class="d-flex align-items-center justify-content-center toggleCon">
                             <h4>MONTHLY</h4>
-                            <div class="cusCheck">
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>
-                            </div>
+                            <div class="cusCheck"> <label class="switch"> <input type="checkbox" checked> <span
+                                        class="slider round"></span> </label> </div>
                             <h4>ANNUAL</h4>
                         </div>
                     </div>
                 </div>
                 <div class="row plans">
                     <div class="col-md-4 plan">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img loading="lazy" src="./img/small.png" srcset="./img/small.png 1x, ./img/small@2x.png 2x" alt="small"></div>
+                        <div class="d-flex align-items-center justify-content-center"> <img loading="lazy"
+                                src="./img/small.png" srcset="./img/small.png 1x, ./img/small@2x.png 2x" alt="small"></div>
                         <h2 class="text-center">Trial version</h2>
                         <h1 class="text-center">Free</h1>
                         <h3 class="text-center">14 days</h3>
                         <div class="">
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">24/7 Hours Support</p>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">3 Monthly Campaigns</p>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">10 Monthly Max Responses</p>
                             </div>
                         </div>
-                        <div class="d-flex btnCon justify-content-center mb-3">
-                            <button class="border-btn">choose plan</button>
-                        </div>
+                        <div class="d-flex btnCon justify-content-center mb-3"> <button class="border-btn">choose
+                                plan</button> </div>
                     </div>
                     <div class="col-md-4 plan">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img loading="lazy" src="./img/trial.png" srcset="./img/trial.png 1x, ./img/trial@2x.png 2x"  alt="trial"></div>
+                        <div class="d-flex align-items-center justify-content-center"> <img loading="lazy"
+                                src="./img/trial.png" srcset="./img/trial.png 1x, ./img/trial@2x.png 2x" alt="trial"></div>
                         <h2 class="text-center">Small Business</h2>
                         <h1 class="text-center">$49.99 </h1>
                         <h3 class="text-center">14 days</h3>
                         <div class="">
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">24/7 Hours Support</p>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">3 Monthly Campaigns</p>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">10 Monthly Max Responses</p>
                             </div>
                         </div>
-                        <div class="d-flex btnCon justify-content-center mb-3">
-                            <button class="border-btn">choose plan</button>
-                        </div>
+                        <div class="d-flex btnCon justify-content-center mb-3"> <button class="border-btn">choose
+                                plan</button> </div>
                     </div>
                     <div class="col-md-4 plan">
-                        <div class="d-flex align-items-center justify-content-center">
-                            <img loading="lazy" src="./img/enterprise.png" srcset="./img/enterprise.png 1x, ./img/enterprise@2x.png 2x" alt="enterprise"></div>
+                        <div class="d-flex align-items-center justify-content-center"> <img loading="lazy"
+                                src="./img/enterprise.png" srcset="./img/enterprise.png 1x, ./img/enterprise@2x.png 2x"
+                                alt="enterprise"></div>
                         <h2 class="text-center"> Enterprise</h2>
                         <h1 class="text-center">$99.99</h1>
                         <h3 class="text-center">per month</h3>
                         <div class="">
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">24/7 Hours Support</p>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">3 Monthly Campaigns</p>
                             </div>
-                            <div class="d-flex align-items-center mb-3">
-                                <img loading="lazy" src="./img/tick.png" alt="check">
+                            <div class="d-flex align-items-center mb-3"> <img loading="lazy" src="./img/tick.png"
+                                    alt="check">
                                 <p class="">10 Monthly Max Responses</p>
                             </div>
                         </div>
-                        <div class="d-flex btnCon justify-content-center mb-3">
-                            <button class="border-btn">choose plan</button>
-                        </div>
+                        <div class="d-flex btnCon justify-content-center mb-3"> <button class="border-btn">choose
+                                plan</button> </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+    </main>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
