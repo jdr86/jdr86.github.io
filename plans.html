@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Plans</title>
+    <title>Pricing Plans</title>
     <meta name="description" content="Set your plan">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Window tiles -->
@@ -12,7 +12,9 @@
     <meta name="msapplication-square150x150logo" content="images/tiles/acme-tile-medium.png" />
     <meta name="msapplication-wide310x150logo" content="images/tiles/acme-tile-wide.png" />
     <meta name="msapplication-square310x310logo" content="images/tiles/acme-tile-large.png" />
-    <link href="./style.css" rel="stylesheet">
+    <link rel="preload" href="./style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style.css"></noscript>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -49,21 +51,21 @@
                 <div class="row plans">
                     <div class="col-md-4 plan">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="./img/small.png" alt=""></div>
+                            <img loading="lazy" src="./img/small.png" srcset="./img/small.png 1x, ./img/small@2x.png 2x" alt="small"></div>
                         <h2 class="text-center">Trial version</h2>
                         <h1 class="text-center">Free</h1>
                         <h3 class="text-center">14 days</h3>
                         <div class="">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">24/7 Hours Support</p>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">3 Monthly Campaigns</p>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">10 Monthly Max Responses</p>
                             </div>
                         </div>
@@ -73,21 +75,21 @@
                     </div>
                     <div class="col-md-4 plan">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="./img/trial.png" alt=""></div>
+                            <img loading="lazy" src="./img/trial.png" srcset="./img/trial.png 1x, ./img/trial@2x.png 2x"  alt="trial"></div>
                         <h2 class="text-center">Small Business</h2>
                         <h1 class="text-center">$49.99 </h1>
                         <h3 class="text-center">14 days</h3>
                         <div class="">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">24/7 Hours Support</p>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">3 Monthly Campaigns</p>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">10 Monthly Max Responses</p>
                             </div>
                         </div>
@@ -97,21 +99,21 @@
                     </div>
                     <div class="col-md-4 plan">
                         <div class="d-flex align-items-center justify-content-center">
-                            <img src="./img/enterprise.png" alt=""></div>
+                            <img loading="lazy" src="./img/enterprise.png" srcset="./img/enterprise.png 1x, ./img/enterprise@2x.png 2x" alt="enterprise"></div>
                         <h2 class="text-center"> Enterprise</h2>
                         <h1 class="text-center">$99.99</h1>
                         <h3 class="text-center">per month</h3>
                         <div class="">
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">24/7 Hours Support</p>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">3 Monthly Campaigns</p>
                             </div>
                             <div class="d-flex align-items-center mb-3">
-                                <img src="./img/tick.png" alt="">
+                                <img loading="lazy" src="./img/tick.png" alt="check">
                                 <p class="">10 Monthly Max Responses</p>
                             </div>
                         </div>

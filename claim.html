@@ -12,7 +12,9 @@
     <meta name="msapplication-square150x150logo" content="images/tiles/acme-tile-medium.png" />
     <meta name="msapplication-wide310x150logo" content="images/tiles/acme-tile-wide.png" />
     <meta name="msapplication-square310x310logo" content="images/tiles/acme-tile-large.png" />
-    <link href="./style.css" rel="stylesheet">
+    <link rel="preload" href="./style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="./style.css"></noscript>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -33,7 +35,7 @@
                     <div class="absRightImg"></div>
                     <div class="col-md-6 leftData">
                         <div>
-                            <img alt="animation" src="./img/animation.png">
+                            <img loading="lazy" alt="animation" srcset="./img/animation.png 1x, ./img/animation@2x.png 2x" src="./img/animation.png">
                         </div>
                         <div>
                             <h1>Claim your business and register yourself</h1>
@@ -51,17 +53,22 @@
                             </div>
                             <div id="form1" class="formInner1">
                                 <!-- Username -->
-                                <input type="text" id="Username" class="form-control " placeholder="User Name">
+                                <label>
+                                <input type="text" id="Username" class="form-control " placeholder="User Name"></label>
                                 <!-- Firstname -->
-                                <input type="text" id="FirstName" class="form-control " placeholder="First Name">
+                                <label>
+                                <input type="text" id="FirstName" class="form-control " placeholder="First Name"></label>
                                 <!-- Lastname -->
-                                <input type="text" id="Lastname" class="form-control " placeholder="Last Name">
+                                <label>
+                                <input type="text" id="Lastname" class="form-control " placeholder="Last Name"></label>
 
                                 <!-- Email -->
-                                <input type="email" id="Email" class="form-control " placeholder="Email">
+                                <label>
+                                <input type="email" id="Email" class="form-control " placeholder="Email"></label>
 
                                 <!-- Password -->
-                                <input type="password" id="Password" class="form-control " placeholder="Password">
+                                <label>
+                                <input type="password" id="Password" class="form-control " placeholder="Password"></label>
 
                                 <div class="d-flex justify-content-start">
                                     <div>
@@ -85,7 +92,7 @@
                             <div id="form2" class="hidden formInner">
                                 <h4>Verify it’s you</h4>
                                 <div class="d-flex align-items-center">
-                                    <img src="./img/icon.png" alt="" class="icon">
+                                    <img loading="lazy" src="./img/icon.png" alt="" class="icon">
                                     <h5>john.doe@gmail.com</h5>
                                 </div>
                                 <h4>Enter phone number</h4>
@@ -107,14 +114,16 @@
                                     <h4>Enter verification code</h4>
                                     <h5>A text message with a verification code has been sent to
                                         +134*****</h5>
-                                    <input type="text" placeholder="Enter 6-digit code">
+                                        <label>
+                                    <input type="text" placeholder="Enter 6-digit code"></label>
                                 </div>
                                 <button onclick=callForm(4) class="btn-blue my-4" type="button">VERIFY</button>
                             </div>
                             <div id="form4" class="hidden formInner1">
-                                <input type="text" id="street" class="form-control " placeholder="Street">
+                                <label>
+                                <input type="text" id="street" class="form-control " placeholder="Street"></label>
                                 <div class="dropArrow">
-                                    <img src="./img/chevron-down.png" alt="">
+                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
                                     <select class="form-control">
                                         <option value="">Country</option>
                                         <option value="">Option 2</option>
@@ -123,7 +132,7 @@
                                     </select>
                                 </div>
                                 <div class="dropArrow">
-                                    <img src="./img/chevron-down.png" alt="">
+                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
                                     <select class="form-control">
                                         <option value="">State</option>
                                         <option value="">Option 2</option>
@@ -132,7 +141,7 @@
                                     </select>
                                 </div>
                                 <div class="dropArrow">
-                                    <img src="./img/chevron-down.png" alt="">
+                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
                                     <select class="form-control">
                                         <option value="">City</option>
                                         <option value="">Option 2</option>
@@ -141,7 +150,7 @@
                                     </select>
                                 </div>
                                 <div class="dropArrow">
-                                    <img src="./img/chevron-down.png" alt="">
+                                    <img loading="lazy" src="./img/chevron-down.png" alt="">
                                     <select class="form-control">
                                         <option value="">Neighborhood</option>
                                         <option value="">Option 2</option>
@@ -270,7 +279,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 rightImage">
-                        <img alt="play" src="./img/play.png">
+                        <img loading="lazy" alt="play" src="./img/play.png">
                     </div>
                 </div>
             </div>
@@ -476,10 +485,10 @@
 
                     <!-- Left and right controls -->
                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <img src="./img//leftArrow.png" alt="">
+                        <img loading="lazy" src="./img//leftArrow.png" alt="">
                     </a>
                     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <img src="./img//rightArrow.png" alt="">
+                        <img loading="lazy" src="./img//rightArrow.png" alt="">
                     </a>
                 </div>
             </div>
