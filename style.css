@@ -1,3 +1,12 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+}
 .main__page {
   overflow: hidden;
 }
@@ -45,6 +54,7 @@
   margin: 0;
 }
 .rightForm form {
+  -webkit-box-shadow: 0px 0px 15px #ded8d8;
   box-shadow: 0px 0px 15px #ded8d8;
   margin-top: 40px;
   background: #fff;
@@ -92,11 +102,15 @@
 }
 .merchant-header .leftData {
   width: 48%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48%;
   flex: 0 0 48%;
   margin-right: 2%;
 }
 .merchant-header .rightForm {
   width: 40%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40%;
   flex: 0 0 40%;
   margin-left: 10%;
 }
@@ -256,6 +270,8 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 47%;
   flex: 0 0 47%;
 }
 .merchant-header {
@@ -394,7 +410,7 @@
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -450,18 +466,20 @@
   bottom: 0;
   background-color: #ccc;
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
 .cusCheck .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: white;
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -470,6 +488,7 @@
 }
 
 .cusCheck input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #009f8b;
   box-shadow: 0 0 1px #009f8b;
 }
 
@@ -495,7 +514,10 @@
 }
 .pricing_plan .plan {
   padding: 25px;
+  -webkit-box-shadow: 0 0 9px #9797976b;
   box-shadow: 0 0 9px #9797976b;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30.333333%;
   flex: 0 0 30.333333%;
   margin: 0 1.5%;
   background: #fff;
@@ -554,4 +576,10 @@
 }
 .circle-active {
   background-color: #49a6ea !important;
+}
+.p-100-0 {
+  padding: 100px 0;
+}
+.w-55 {
+  width: 55px;
 }
